@@ -1011,7 +1011,7 @@ input::-moz-focus-inner {
 /**
  * skillbars - (_skillbars.scss)
  * -------------------------------------------------------------------
- */
+ 
 .skill-bars {
   list-style: none;
   margin: 6rem 0 3rem;
@@ -1123,6 +1123,7 @@ input::-moz-focus-inner {
 .skill-bars li .percent100 {
   width: 100%;
 }
+*/
 
 /* ===================================================================
  *  08. common and reusable styles 
@@ -1131,7 +1132,9 @@ input::-moz-focus-inner {
 .section-intro {
   text-align: center;
   position: relative;
+    margin:0 auto 0 auto;
   margin-bottom: 1.5rem;
+    padding:1rem;
 }
 .section-intro h1 {
   font-family: "librebaskerville-bold", serif;
@@ -1146,7 +1149,8 @@ input::-moz-focus-inner {
   color: rgba(242, 242, 242, 0.5);
   text-transform: uppercase;
   letter-spacing: .3rem;
-  margin-bottom: 1.2rem;
+  margin-top: 1.2rem;
+    margin-bottom: 1.2rem;
 }
 .section-intro .lead {
   font-family: "montserrat-regular", sans-serif;
@@ -1982,14 +1986,14 @@ html[data-useragent*='MSIE 10.0'] .scrolldown,
 }
 
 #services h4 {
-  font-family: "montserrat-bold", sans-serif;
-  font-size: 1.8rem;
+   font-family: "montserrat-regular", sans-serif;
+  font-size: 1.8 rem;
   line-height: 1.667;
-  color: #07617d;
+    color: #07617d;
   text-transform: uppercase;
-  letter-spacing: .3rem;
-  position: relative;
-  text-align: center;
+ 
+  margin-top: 1.2rem;
+    margin-bottom: 1.2rem;
 }
 
 #services h4 {
@@ -2429,17 +2433,24 @@ html[data-useragent*='MSIE 10.0'] .scrolldown,
  *  16. contact - (_layout.scss)
  *
  * ------------------------------------------------------------------- */
+
+
+
 #contact {
-  background-color: #111111;
-  background-image: url(../images/contact-bg.jpg);
+  /* background-color: #111111;
+ background-image: url(../images/contact-bg.jpg);
   background-repeat: no-repeat;
   background-position: center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
-  background-size: cover;
+  background-size: cover;*/
   padding: 12rem 0 12rem;
   position: relative;
+   
 }
+
+
+
 #contact .overlay {
   position: absolute;
   top: 0;
@@ -2460,11 +2471,12 @@ html[data-useragent*='MSIE 10.0'] .scrolldown,
 }
 
 .contact-content {
-  max-width: 1024px;
+  max-width: 65%;
   margin-top: 3rem;
   color: #FFFFFF;
   z-index: 600;
   position: relative;
+    margin:0 auto 0 auto;
 }
 .contact-content h5 {
   color: #FFFFFF;
@@ -2775,9 +2787,7 @@ footer h4.h05::after {
 .footer-main ul a:hover, .footer-main ul a:focus {
   color: #FFFFFF;
 }
-.footer-main .subscribe-form {
-  position: relative;
-}
+
 .footer-main #mc-form {
   margin: 0;
   padding: 0;
@@ -2916,3 +2926,6 @@ footer h4.h05::after {
     display: none;
   }
 }
+
+
+
